@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 7438475744932363196}
   - component: {fileID: 7438475744932363197}
   - component: {fileID: 7438475744932363138}
+  - component: {fileID: 142087346}
   m_Layer: 0
   m_Name: TeleporterPrefab
   m_TagString: Untagged
@@ -155,3 +156,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prompt: Would you like to enter the past?
   spawnDestination: {fileID: 7438475743446874131}
+  executeOnTrigger: 0
+--- !u!114 &142087346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7438475744932363139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7f753240b79772489f98c52057f6f4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  manager: {fileID: 0}
+  areaOnly: 1
+  id: teleport
+  actionText: Touch rift.
+  typeSound: []
+  audioSource: {fileID: 0}

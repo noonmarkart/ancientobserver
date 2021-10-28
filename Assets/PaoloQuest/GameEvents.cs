@@ -29,13 +29,33 @@ public class GameEvents : MonoBehaviour
                 print("testing");
                 break;
 
+            case "teleport":
+                // execute teleport action
+                GetComponent<DialogueManager>().currentInteractable.GetComponent<Teleporter>().ExecuteTeleport(player);
+                break;
+
             default:
                 print("Event " + id + " not implemented");
                 break;
         }
         
     }
-    
+
+    public string ReturnStringEvent(string id)
+    {
+        print("Event " + id + " just happened");
+
+        switch(id)
+        {
+            case "getTeleportText":
+                //
+                return GetComponent<DialogueManager>().currentInteractable.GetComponent<Teleporter>().prompt;
+
+            default:
+                print("Event " + id + " not implemented");
+                return "NOT FOUND";
+        }
+    }
 
     public void Restart()
     {
