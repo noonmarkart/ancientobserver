@@ -6,6 +6,7 @@ public class Teleporter : MonoBehaviour
 {
     public string prompt = "Would you like to enter the past?";
     public Transform spawnDestination;
+    public bool executeOnTrigger = false;
 
     public void ExecuteTeleport(GameObject targetObject)
     {
@@ -14,6 +15,7 @@ public class Teleporter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        ExecuteTeleport(collider.gameObject);
+        if (executeOnTrigger)
+            ExecuteTeleport(collider.gameObject);
     }
 }

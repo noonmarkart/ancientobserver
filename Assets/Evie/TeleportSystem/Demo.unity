@@ -487,7 +487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12285399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.68, y: -3.2, z: 0}
+  m_LocalPosition: {x: 27.64, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1571,6 +1571,30 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!1 &142087341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7438475744932363139, guid: b7287cab079a4437ab9bcaac299d620a, type: 3}
+  m_PrefabInstance: {fileID: 7438475743431331293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &142087346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142087341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7f753240b79772489f98c52057f6f4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  manager: {fileID: 0}
+  areaOnly: 1
+  id: teleport
+  actionText: Touch rift.
+  typeSound: []
+  audioSource: {fileID: 0}
 --- !u!114 &144264048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9387,7 +9411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &240144570
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10032,7 +10056,7 @@ MonoBehaviour:
   typingDelay: 0.1
   interactables: []
   currentInteractable: {fileID: 0}
-  inkJSONAsset: {fileID: 4900000, guid: d7965e697afbc484bac73f274e78cdf8, type: 3}
+  inkJSONAsset: {fileID: 4900000, guid: af665fcc6c14a4910905734b362f1d07, type: 3}
 --- !u!4 &268224654
 Transform:
   m_ObjectHideFlags: 0
@@ -10059,7 +10083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4329bb55e52d28245b7f1b8aff5599f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1518534424}
 --- !u!114 &273266892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36570,7 +36594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &2139812940
 AudioSource:
   m_ObjectHideFlags: 0
@@ -36732,7 +36756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7438475744932363199, guid: b7287cab079a4437ab9bcaac299d620a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.71
+      value: 27.82
       objectReference: {fileID: 0}
     - target: {fileID: 7438475744932363199, guid: b7287cab079a4437ab9bcaac299d620a, type: 3}
       propertyPath: m_LocalPosition.y

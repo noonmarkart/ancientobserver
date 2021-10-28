@@ -113,6 +113,13 @@ public class DialogueManager : MonoBehaviour
             else
                 print("You need a GameEvents class to call a gameEvent");
         });
+        story.BindExternalFunction("returnStringEvent", (string name) => {
+
+            if (gameObject.GetComponent<GameEvents>() != null)
+                DisplayLine(gameObject.GetComponent<GameEvents>().ReturnStringEvent(name));
+            else
+                print("You need a GameEvents class to call a gameEvent");
+        });
 
         //I don't start the dialogue here because the story bits will be activated by the player interaction
         //StartDialogue();
